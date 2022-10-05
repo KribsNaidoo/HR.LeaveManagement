@@ -12,7 +12,7 @@
         }
         public async Task<int> Handle(CreateLeaveTypeDetailCommand request, CancellationToken cancellationToken)
         {
-            var validator = new CreateLeaveTypeDtoValidator();
+            var validator = new ILeaveTypeDtoValidator();
             var validationResult = await validator.ValidateAsync(request.leaveTypeDto);
 
             if (validationResult.IsValid == false)
