@@ -1,0 +1,6 @@
+HR.LeaveManagement.Domain/bin/
+HR.LeaveManagement.Domain/obj/
+HR.LeaveManagement.Application/bin/
+HR.LeaveManagement.Application/obj/
+.vs/
+.env
