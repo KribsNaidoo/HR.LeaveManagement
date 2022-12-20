@@ -1,23 +1,33 @@
-﻿namespace HR.LeaveManagement.Application.Features.LeaveAllocations.Handlers.Commands
+﻿using ValidationException = HR.LeaveManagement.Application.Exceptions.ValidationException;
+
+namespace HR.LeaveManagement.Application.Features.LeaveAllocations.Handlers.Commands
 {
     public class UpdateLeaveAllocationCommandHandler : IRequestHandler<UpdateLeaveAllocationCommand, Unit>
     {
-        private readonly ILeaveAllocationRepository _leaveTypeRepository;
+        private readonly ILeaveAllocationRepository _leaveAllocationRepository;
+        private readonly ILeaveTypeRepository _leaveTypeRepository;
         private readonly IMapper _mapper;
 
-        public UpdateLeaveAllocationCommandHandler(ILeaveAllocationRepository leaveTypeRepository, IMapper mapper)
+        public UpdateLeaveAllocationCommandHandler(ILeaveAllocationRepository leaveAllocationRepository, ILeaveTypeRepository leaveTypeRepository, IMapper mapper)
         {
+            _leaveAllocationRepository = leaveAllocationRepository;
             _leaveTypeRepository = leaveTypeRepository;
             _mapper = mapper;
         }
 
         public async Task<Unit> Handle(UpdateLeaveAllocationCommand request, CancellationToken cancellationToken)
         {
-            var leaveAllocation = await _leaveTypeRepository.Get(request.leaveAllocationDto.Id);
+            var validator = new UpdateLeaveAllocationDtoValidator(_leaveTypeRepository);
+            var validationResult = await validator.ValidateAsync(request.leaveAllocationDto);
+
+            if (validationResult.IsValid == false)
+                throw new ValidationException(validationResult);
+
+            var leaveAllocation = await _leaveAllocationRepository.Get(request.leaveAllocationDto.Id);
 
             _mapper.Map(request.leaveAllocationDto, leaveAllocation);
 
-            await _leaveTypeRepository.Update(leaveAllocation);
+            await _leaveAllocationRepository.Update(leaveAllocation);
 
             return Unit.Value;
         }

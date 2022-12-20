@@ -2,11 +2,11 @@
 {
     public class ILeaveRequestDtoValidator : AbstractValidator<ILeaveRequestDto>
     {
-        private readonly ILeaveAllocationRepository _leaveAllocationRepository;
+        private readonly ILeaveTypeRepository _ILeaveTypeRepository;
 
-        public ILeaveRequestDtoValidator(ILeaveAllocationRepository leaveAllocationRepository)
+        public ILeaveRequestDtoValidator(ILeaveTypeRepository ILeaveTypeRepository)
         {
-            _leaveAllocationRepository = leaveAllocationRepository;
+            _ILeaveTypeRepository = ILeaveTypeRepository;
 
             RuleFor(leaveRequest => leaveRequest.StartDate)
                 .LessThan(leaveRequest => leaveRequest.EndDate).WithMessage("{PropertyName} must be before {ComparisonValue}");
@@ -18,7 +18,7 @@
                 .GreaterThan(0)
                 .MustAsync(async (id, token) =>
                 {
-                    var leaveTypeExists = await _leaveAllocationRepository.Exists(id);
+                    var leaveTypeExists = await _ILeaveTypeRepository.Exists(id);
                     return leaveTypeExists;
                 })
                 .WithMessage("{PropertyName} does not exist");

@@ -2,12 +2,12 @@
 {
     public class CreateLeaveRequestDtoValidator : AbstractValidator<CreateLeaveRequestDto>
     {
-        private readonly ILeaveAllocationRepository _leaveAllocationRepository;
+        private readonly ILeaveTypeRepository _leaveTypeRepository;
 
-        public CreateLeaveRequestDtoValidator(ILeaveAllocationRepository leaveAllocationRepository)
+        public CreateLeaveRequestDtoValidator(ILeaveTypeRepository leaveTypeRepository)
         {
-            _leaveAllocationRepository = leaveAllocationRepository;
-            Include(new ILeaveRequestDtoValidator(_leaveAllocationRepository));
+            _leaveTypeRepository = leaveTypeRepository;
+            Include(new ILeaveRequestDtoValidator(_leaveTypeRepository));
         }
     }
 }

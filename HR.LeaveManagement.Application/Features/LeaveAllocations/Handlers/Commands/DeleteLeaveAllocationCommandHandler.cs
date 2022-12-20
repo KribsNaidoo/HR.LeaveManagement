@@ -15,6 +15,9 @@
         {
             var leaveAllocation = await _leaveAllocationRepository.Get(request.Id);
 
+            if (leaveAllocation == null)
+                throw new NotFoundException(nameof(LeaveType), request.Id);
+
             await _leaveAllocationRepository.Delete(leaveAllocation);
 
             return Unit.Value;

@@ -15,6 +15,9 @@
         {
             var leaveRequest = await _leaveRequestRepository.Get(request.Id);
 
+            if (leaveRequest == null)
+                throw new NotFoundException(nameof(LeaveType), request.Id);
+
             await _leaveRequestRepository.Delete(leaveRequest);
 
             return Unit.Value;

@@ -1,11 +1,15 @@
 ﻿global using AutoMapper;
 global using FluentValidation;
+global using FluentValidation.Results;
 global using MediatR;
 global using HR.LeaveManagement.Application.DTO.Common;
 global using HR.LeaveManagement.Application.DTO.LeaveAllocation;
+global using HR.LeaveManagement.Application.DTO.LeaveAllocation.Validators;
 global using HR.LeaveManagement.Application.DTO.LeaveType;
 global using HR.LeaveManagement.Application.DTO.LeaveType.Validators;
 global using HR.LeaveManagement.Application.DTO.LeaveRequest;
+global using HR.LeaveManagement.Application.DTO.LeaveRequest.Validators;
+global using HR.LeaveManagement.Application.Responses;
 global using HR.LeaveManagement.Domain;
 global using HR.LeaveManagement.Application.Persistence.Contracts;
 global using HR.LeaveManagement.Application.Features.LeaveAllocations.Requests.Commands;
@@ -14,3 +18,4 @@ global using HR.LeaveManagement.Application.Features.LeaveRequests.Requests.Comm
 global using HR.LeaveManagement.Application.Features.LeaveRequests.Requests.Queries;
 global using HR.LeaveManagement.Application.Features.LeaveTypes.Requests.Commands;
 global using HR.LeaveManagement.Application.Features.LeaveTypes.Requests.Queries;
+global using HR.LeaveManagement.Application.Exceptions;

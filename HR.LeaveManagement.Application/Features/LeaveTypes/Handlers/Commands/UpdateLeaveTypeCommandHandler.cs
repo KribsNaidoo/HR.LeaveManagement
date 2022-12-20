@@ -1,4 +1,6 @@
-﻿namespace HR.LeaveManagement.Application.Features.LeaveTypes.Handlers.Commands
+﻿using ValidationException = HR.LeaveManagement.Application.Exceptions.ValidationException;
+
+namespace HR.LeaveManagement.Application.Features.LeaveTypes.Handlers.Commands
 {
     public class UpdateLeaveTypeCommandHandler : IRequestHandler<UpdateLeaveTypeCommand, Unit>
     {
@@ -13,6 +15,13 @@
 
         public async Task<Unit> Handle(UpdateLeaveTypeCommand request, CancellationToken cancellationToken)
         {
+            var validator = new UpdateLeaveTypeDtoValidator();
+            var validationResult = await validator.ValidateAsync(request.leaveTypeDto);
+
+            if (validationResult.IsValid == false)
+                throw new ValidationException(validationResult);
+
+            
             var leaveType = await _leaveTypeRepository.Get(request.leaveTypeDto.Id);
 
             _mapper.Map(request.leaveTypeDto, leaveType);

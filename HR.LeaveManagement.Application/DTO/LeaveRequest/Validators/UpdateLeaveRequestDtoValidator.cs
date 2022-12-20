@@ -2,12 +2,12 @@
 {
     public class UpdateLeaveRequestDtoValidator : AbstractValidator<UpdateLeaveRequestDto>
     {
-        private readonly ILeaveAllocationRepository _leaveAllocationRepository;
+        private readonly ILeaveTypeRepository _leaveTypeRepository;
 
-        public UpdateLeaveRequestDtoValidator(ILeaveAllocationRepository leaveAllocationRepository)
+        public UpdateLeaveRequestDtoValidator(ILeaveTypeRepository leaveTypeRepository)
         {
-            _leaveAllocationRepository = leaveAllocationRepository;
-            Include(new ILeaveRequestDtoValidator(_leaveAllocationRepository));
+            _leaveTypeRepository = leaveTypeRepository;
+            Include(new ILeaveRequestDtoValidator(_leaveTypeRepository));
 
             RuleFor(leaveRequest => leaveRequest.Id)
                 .NotNull().WithMessage("{PropertyName} must be present");
