@@ -8,6 +8,8 @@
         {
             _leaveAllocationRepository = leaveAllocationRepository;
             Include(new ILeaveAllocationDtoValidator(_leaveAllocationRepository));
+
+            RuleFor(leaveAllocation => leaveAllocation.Id).NotNull().WithMessage("{PropertyName} must be present");
         }
     }
 }

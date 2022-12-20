@@ -10,7 +10,7 @@
             Include(new ILeaveRequestDtoValidator(_leaveAllocationRepository));
 
             RuleFor(leaveRequest => leaveRequest.Id)
-                .NotNull().WithMessage("{PropertyName} does not exist");
+                .NotNull().WithMessage("{PropertyName} must be present");
         }
     }
 }
