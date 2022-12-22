@@ -1,5 +1,6 @@
 ﻿using HR.LeaveManagement.Application.Persistence.Contracts;
 using HR.LeaveManagement.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace HR.LeaveManagement.Persistence.Repositories
 {
@@ -12,7 +13,19 @@ namespace HR.LeaveManagement.Persistence.Repositories
             this._dbContext = dbContext;
         }
 
-        public Task<LeaveAllocation> GetLeaveAllocationWithDetails(int id) => throw new NotImplementedException();
-        public Task<List<LeaveAllocation>> GetLeaveAllocationWithDetails() => throw new NotImplementedException();
+        public async Task<LeaveAllocation> GetLeaveAllocationWithDetails(int id)
+        {
+            var leaveAllocation = await _dbContext.LeaveAllocations
+                .Include(q => q.LeaveType)
+                .FirstOrDefaultAsync(q => q.Id == id);
+            return leaveAllocation;
+        }
+        public async Task<List<LeaveAllocation>> GetLeaveAllocationWithDetails()
+        {
+            var leaveAllocations = await _dbContext.LeaveAllocations
+                .Include(q => q.LeaveType)
+                .ToListAsync();
+            return leaveAllocations;
+        }
     }
 }

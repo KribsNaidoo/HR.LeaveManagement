@@ -13,7 +13,7 @@
 
         public async Task<LeaveTypeDto> Handle(GetLeaveTypeDetailRequest request, CancellationToken cancellationToken)
         {
-            var leaveType = _leaveTypeRepository.GetLeaveTypeWithDetails(request.Id);
+            var leaveType = _leaveTypeRepository.Get(request.Id);
             return _mapper.Map<LeaveTypeDto>(leaveType);
         }
     }

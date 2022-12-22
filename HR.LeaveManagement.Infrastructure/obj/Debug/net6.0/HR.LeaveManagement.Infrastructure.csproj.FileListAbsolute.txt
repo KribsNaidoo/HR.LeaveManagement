@@ -1,0 +1,12 @@
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\bin\Debug\net6.0\HR.LeaveManagement.Infrastructure.deps.json
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\bin\Debug\net6.0\HR.LeaveManagement.Infrastructure.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\bin\Debug\net6.0\HR.LeaveManagement.Infrastructure.pdb
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.AssemblyInfo.cs
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\refint\HR.LeaveManagement.Infrastructure.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\HR.LeaveManagement.Infrastructure.pdb
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net6.0\ref\HR.LeaveManagement.Infrastructure.dll
