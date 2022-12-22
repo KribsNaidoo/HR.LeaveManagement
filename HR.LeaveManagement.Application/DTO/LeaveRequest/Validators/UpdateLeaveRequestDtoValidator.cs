@@ -1,4 +1,6 @@
-﻿namespace HR.LeaveManagement.Application.DTO.LeaveRequest.Validators
+﻿using HR.LeaveManagement.Application.Contracts.Persistence;
+
+namespace HR.LeaveManagement.Application.DTO.LeaveRequest.Validators
 {
     public class UpdateLeaveRequestDtoValidator : AbstractValidator<UpdateLeaveRequestDto>
     {

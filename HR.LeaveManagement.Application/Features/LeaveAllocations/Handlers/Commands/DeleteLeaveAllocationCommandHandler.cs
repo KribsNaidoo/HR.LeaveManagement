@@ -1,4 +1,6 @@
-﻿namespace HR.LeaveManagement.Application.Features.LeaveAllocations.Handlers.Commands
+﻿using HR.LeaveManagement.Application.Contracts.Persistence;
+
+namespace HR.LeaveManagement.Application.Features.LeaveAllocations.Handlers.Commands
 {
     public class DeleteLeaveAllocationCommandHandler : IRequestHandler<DeleteLeaveAllocationCommand>
     {

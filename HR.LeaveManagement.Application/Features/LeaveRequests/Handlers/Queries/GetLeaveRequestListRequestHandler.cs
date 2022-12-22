@@ -1,4 +1,6 @@
-﻿namespace HR.LeaveManagement.Application.Features.LeaveRequests.Handlers.Queries
+﻿using HR.LeaveManagement.Application.Contracts.Persistence;
+
+namespace HR.LeaveManagement.Application.Features.LeaveRequests.Handlers.Queries
 {
     public class GetLeaveRequestListRequestHandler : IRequestHandler<GetLeaveRequestListRequest, List<LeaveRequestListDto>>
     {

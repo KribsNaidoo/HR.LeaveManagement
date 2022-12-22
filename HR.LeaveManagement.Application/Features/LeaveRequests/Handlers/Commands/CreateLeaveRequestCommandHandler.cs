@@ -1,14 +1,18 @@
-﻿namespace HR.LeaveManagement.Application.Features.LeaveRequests.Handlers.Commands
+﻿using HR.LeaveManagement.Application.Contracts.Infrastructure;
+
+namespace HR.LeaveManagement.Application.Features.LeaveRequests.Handlers.Commands
 {
     public class CreateLeaveRequestCommandHandler : IRequestHandler<CreateLeaveRequestCommand, BaseCommandResponse>
     {
         private readonly ILeaveRequestRepository _leaveRequestRepository;
+        private readonly IEmailSender _emailSender;
         private readonly ILeaveTypeRepository _leaveTypeRepository;
         private readonly IMapper _mapper;
 
-        public CreateLeaveRequestCommandHandler(ILeaveRequestRepository leaveRequestRepository, ILeaveTypeRepository leaveTypeRepository, IMapper mapper)
+        public CreateLeaveRequestCommandHandler(ILeaveRequestRepository leaveRequestRepository, IEmailSender emailSender, ILeaveTypeRepository leaveTypeRepository, IMapper mapper)
         {
             _leaveRequestRepository = leaveRequestRepository;
+            _emailSender = emailSender;
             _leaveTypeRepository = leaveTypeRepository;
             _mapper = mapper;
         }
@@ -32,6 +36,19 @@
             response.Success = true;
             response.Message = "Allocations Successful";
             response.Id = leaveRequest.Id;
+            var email = new Email
+            {
+                To = "employee@org.com",
+                Body = $"Your leave request for {request.leaveRequestDto.StartDate:D} to {request.leaveRequestDto.EndDate:D} " +
+                $"has been submitted successfully.",
+                Subject = "Leave Request Submitted"
+            };
+
+            try
+            {
+                await _emailSender.SendEmail(email);
+            }
+            catch (Exception ex) { }
 
             return response;
         }

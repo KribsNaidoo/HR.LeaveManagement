@@ -1,4 +1,5 @@
-﻿using ValidationException = HR.LeaveManagement.Application.Exceptions.ValidationException;
+﻿using HR.LeaveManagement.Application.Contracts.Persistence;
+using ValidationException = HR.LeaveManagement.Application.Exceptions.ValidationException;
 
 namespace HR.LeaveManagement.Application.Features.LeaveRequests.Handlers.Commands
 {
