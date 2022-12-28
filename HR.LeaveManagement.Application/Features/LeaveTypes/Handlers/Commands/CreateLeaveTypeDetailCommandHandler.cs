@@ -30,7 +30,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveTypes.Handlers.Commands
             leaveType = await _leaveTypeRepository.Add(leaveType);
 
             response.Success = true;
-            response.Message = "Allocations Successful";
+            response.Message = "Type Successful";
             response.Id = leaveType.Id;
 
             return response;

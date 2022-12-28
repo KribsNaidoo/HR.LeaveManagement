@@ -34,7 +34,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveRequests.Handlers.Command
             leaveRequest = await _leaveRequestRepository.Add(leaveRequest);
 
             response.Success = true;
-            response.Message = "Allocations Successful";
+            response.Message = "Request Successful";
             response.Id = leaveRequest.Id;
             var email = new Email
             {
