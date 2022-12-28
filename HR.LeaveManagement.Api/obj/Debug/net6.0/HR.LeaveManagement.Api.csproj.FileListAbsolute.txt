@@ -11,6 +11,7 @@ C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Azure.Identity.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\FluentValidation.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Humanizer.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\MediatR.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\MediatR.Contracts.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
@@ -18,6 +19,7 @@ C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
@@ -26,6 +28,7 @@ C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
@@ -42,12 +45,14 @@ C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Mono.TextTemplating.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\SendGrid.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\StarkbankEcdsa.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.CodeDom.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
@@ -55,6 +60,8 @@ C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.Runtime.Caching.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.Text.Json.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.Windows.Extensions.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -67,6 +74,7 @@ C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\HR.LeaveManagement.Application.dll
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\HR.LeaveManagement.Domain.dll
@@ -97,11 +105,3 @@ C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\obj\Debug\net6.0\
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\obj\Debug\net6.0\HR.LeaveManagement.Api.pdb
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\obj\Debug\net6.0\HR.LeaveManagement.Api.genruntimeconfig.cache
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\obj\Debug\net6.0\ref\HR.LeaveManagement.Api.dll
-C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Humanizer.dll
-C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
-C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Mono.TextTemplating.dll
-C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.CodeDom.dll
-C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.Text.Encodings.Web.dll
-C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\System.Text.Json.dll
-C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
