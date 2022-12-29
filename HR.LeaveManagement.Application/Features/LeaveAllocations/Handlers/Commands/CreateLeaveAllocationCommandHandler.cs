@@ -1,8 +1,9 @@
 ﻿using HR.LeaveManagement.Application.Contracts.Persistence;
+using ValidationException = HR.LeaveManagement.Application.Exceptions.ValidationException;
 
 namespace HR.LeaveManagement.Application.Features.LeaveAllocations.Handlers.Commands
 {
-    public class CreateLeaveAllocationCommandHandler : IRequestHandler<CreateLeaveAllocationCommand, BaseCommandResponse>
+    public class CreateLeaveAllocationCommandHandler : IRequestHandler<CreateLeaveAllocationCommand, int>
     {
         private readonly ILeaveAllocationRepository _leaveAllocationRepository;
         private readonly ILeaveTypeRepository _leaveTypeRepository;
@@ -15,28 +16,19 @@ namespace HR.LeaveManagement.Application.Features.LeaveAllocations.Handlers.Comm
             _mapper = mapper;
         }
 
-        public async Task<BaseCommandResponse> Handle(CreateLeaveAllocationCommand request, CancellationToken cancellationToken)
+        public async Task<int> Handle(CreateLeaveAllocationCommand request, CancellationToken cancellationToken)
         {
-            var response = new BaseCommandResponse();
             var validator = new CreateLeaveAllocationDtoValidator(_leaveTypeRepository);
             var validationResult = await validator.ValidateAsync(request.leaveAllocationDto);
 
             if (validationResult.IsValid == false)
-            {
-                response.Success = false;
-                response.Message = "Allocations Failed";
-                response.Errors = validationResult.Errors.Select(q => q.ErrorMessage).ToList();
-            }
+                throw new ValidationException(validationResult);
 
             var leaveAllocation = _mapper.Map<LeaveAllocation>(request.leaveAllocationDto);
 
             leaveAllocation = await _leaveAllocationRepository.Add(leaveAllocation);
 
-            response.Success = true;
-            response.Message = "Allocations Successful";
-            response.Id = leaveAllocation.Id;
-
-            return response;
+            return leaveAllocation.Id;
         }
     }
 }
