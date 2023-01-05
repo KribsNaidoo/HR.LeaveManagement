@@ -49,9 +49,45 @@ namespace HR.LeaveManagement.MVC.Services
             }
         }
 
-        public Task<Response<int>> DeleteLeaveType(int id) => throw new NotImplementedException();
-        public Task<LeaveTypeVM> GetLeaveTypeDetails(int id) => throw new NotImplementedException();
-        public Task<List<LeaveTypeVM>> GetLeaveTypes() => throw new NotImplementedException();
-        public Task<Response<int>> UpdateLeaveType(int id, LeaveTypeVM leaveType) => throw new NotImplementedException();
+        public async Task<Response<int>> DeleteLeaveType(int id)
+        {
+            try
+            {
+                AddBearerToken();
+                await _client.LeaveTypesDELETEAsync(id);
+                return new Response<int> { Success = true };
+
+            }
+            catch (ApiException ex)
+            {
+                return ConvertApiExceptions<int>(ex);
+            }
+        }
+        public async Task<LeaveTypeVM> GetLeaveTypeDetails(int id)
+        {
+            //AddBearerToken();
+            var leaveTypes = await _client.LeaveTypesGETAsync(id);
+            return _mapper.Map<LeaveTypeVM>(leaveTypes);
+        }
+        public async Task<List<LeaveTypeVM>> GetLeaveTypes()
+        {
+            //AddBearerToken();
+            var leaveTypes = await _client.LeaveTypesAllAsync();
+            return _mapper.Map<List<LeaveTypeVM>>(leaveTypes);
+        }
+        public async Task<Response<int>> UpdateLeaveType(LeaveTypeVM leaveType)
+        {
+            try
+            {
+                var leaveTypeDto = _mapper.Map<LeaveTypeDto>(leaveType);
+                AddBearerToken();
+                await _client.LeaveTypesPUTAsync(leaveTypeDto);
+                return new Response<int> { Success = true };
+            }
+            catch (ApiException ex)
+            {
+                return ConvertApiExceptions<int>(ex);
+            }
+        }
     }
 }
