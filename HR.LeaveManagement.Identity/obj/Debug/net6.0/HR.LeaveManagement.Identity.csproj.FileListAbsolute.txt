@@ -1,0 +1,17 @@
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\obj\Debug\net6.0\HR.LeaveManagement.Identity.csproj.AssemblyReference.cache
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\obj\Debug\net6.0\HR.LeaveManagement.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\obj\Debug\net6.0\HR.LeaveManagement.Identity.AssemblyInfoInputs.cache
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\obj\Debug\net6.0\HR.LeaveManagement.Identity.AssemblyInfo.cs
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\obj\Debug\net6.0\HR.LeaveManagement.Identity.csproj.CoreCompileInputs.cache
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\bin\Debug\net6.0\HR.LeaveManagement.Identity.deps.json
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\bin\Debug\net6.0\HR.LeaveManagement.Identity.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\bin\Debug\net6.0\HR.LeaveManagement.Identity.pdb
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\bin\Debug\net6.0\HR.LeaveManagement.Application.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\bin\Debug\net6.0\HR.LeaveManagement.Domain.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\bin\Debug\net6.0\HR.LeaveManagement.Application.pdb
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\bin\Debug\net6.0\HR.LeaveManagement.Domain.pdb
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\obj\Debug\net6.0\HR.LeaveManagement.Identity.csproj.CopyComplete
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\obj\Debug\net6.0\HR.LeaveManagement.Identity.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\obj\Debug\net6.0\refint\HR.LeaveManagement.Identity.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\obj\Debug\net6.0\HR.LeaveManagement.Identity.pdb
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Identity\obj\Debug\net6.0\ref\HR.LeaveManagement.Identity.dll

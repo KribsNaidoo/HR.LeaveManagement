@@ -105,3 +105,11 @@ C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\obj\Debug\net6.0\
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\obj\Debug\net6.0\HR.LeaveManagement.Api.pdb
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\obj\Debug\net6.0\HR.LeaveManagement.Api.genruntimeconfig.cache
 C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\obj\Debug\net6.0\ref\HR.LeaveManagement.Api.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\HR.LeaveManagement.Identity.dll
+C:\Projects\Personal\HR.LeaveManagement\HR.LeaveManagement.Api\bin\Debug\net6.0\HR.LeaveManagement.Identity.pdb
