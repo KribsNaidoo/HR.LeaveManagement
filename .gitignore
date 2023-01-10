@@ -397,17 +397,5 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-HR.LeaveManagement.Domain/bin/
-HR.LeaveManagement.Domain/obj/
-HR.LeaveManagement.Application/bin/
-HR.LeaveManagement.Application/obj/
-HR.LeaveManagement.Api/bin
-HR.LeaveManagement.Api/obj/
-.vs/
-.env
-*.suo
-*.user
-_ReSharper.*
-bin
-obj
-packages
+**/bin/*
+**/obj/*
