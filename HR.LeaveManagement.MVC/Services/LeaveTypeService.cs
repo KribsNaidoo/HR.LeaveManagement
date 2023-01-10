@@ -65,13 +65,13 @@ namespace HR.LeaveManagement.MVC.Services
         }
         public async Task<LeaveTypeVM> GetLeaveTypeDetails(int id)
         {
-            //AddBearerToken();
+            AddBearerToken();
             var leaveTypes = await _client.LeaveTypesGETAsync(id);
             return _mapper.Map<LeaveTypeVM>(leaveTypes);
         }
         public async Task<List<LeaveTypeVM>> GetLeaveTypes()
         {
-            //AddBearerToken();
+            AddBearerToken();
             var leaveTypes = await _client.LeaveTypesAllAsync();
             return _mapper.Map<List<LeaveTypeVM>>(leaveTypes);
         }
