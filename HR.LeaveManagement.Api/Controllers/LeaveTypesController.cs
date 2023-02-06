@@ -43,6 +43,7 @@ namespace HR.LeaveManagement.Api.Controllers
         [HttpPost]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
+        [Authorize(Roles = "Administrator")]
         public async Task<ActionResult<BaseCommandResponse>> Post([FromBody] CreateLeaveTypeDto leaveType)
         {
             var command = new CreateLeaveTypeDetailCommand { leaveTypeDto = leaveType };

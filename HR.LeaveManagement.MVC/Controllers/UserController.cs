@@ -1,6 +1,7 @@
 ﻿using HR.LeaveManagement.MVC.Contracts;
 using HR.LeaveManagement.MVC.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace HR.LeaveManagement.MVC.Controllers
 {
@@ -21,11 +22,14 @@ namespace HR.LeaveManagement.MVC.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM login, string returnUrl)
         {
-            returnUrl ??= Url.Content("~/");
-            var isLoggedIn = await _authenticationService.Authenticate(login.Email, login.Password);
+            if(ModelState.IsValid)
+            {
+                returnUrl ??= Url.Content("~/");
+                var isLoggedIn = await _authenticationService.Authenticate(login.Email, login.Password);
 
-            if (isLoggedIn)
-                return LocalRedirect(returnUrl);
+                if (isLoggedIn)
+                    return LocalRedirect(returnUrl);
+            }            
 
             ModelState.AddModelError("", "Log in Attempt Failed. Please try again.");
             return View(login);
@@ -37,9 +41,19 @@ namespace HR.LeaveManagement.MVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(RegisterVM register)
+        public async Task<IActionResult> Register(RegisterVM registration)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                var returnUrl = Url.Content("~/");
+                var isCreated = await _authenticationService.Register(registration);
+
+                if (isCreated)
+                    return LocalRedirect(returnUrl);
+            }
+
+            ModelState.AddModelError("", "Registration attempt failed. Please try again");
+            return View(registration);
         }
 
         [HttpPost]

@@ -1,6 +1,8 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using AutoMapper;
 using HR.LeaveManagement.MVC.Contracts;
+using HR.LeaveManagement.MVC.Models;
 using HR.LeaveManagement.MVC.Services.Base;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -12,13 +14,16 @@ namespace HR.LeaveManagement.MVC.Services
     {
         private readonly IClient _client;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IMapper _mapper;
         private JwtSecurityTokenHandler _tokenHandler;
 
-        public AuthenticationService(IClient client, ILocalStorageService localStorageService, IHttpContextAccessor httpContextAccessor)
+        public AuthenticationService(IClient client, ILocalStorageService localStorageService, IHttpContextAccessor httpContextAccessor,
+            IMapper mapper)
             : base(client, localStorageService)
         {
             _client = client;
             _httpContextAccessor = httpContextAccessor;
+            this._mapper = mapper;
             _tokenHandler = new JwtSecurityTokenHandler();
         }
 
@@ -48,9 +53,9 @@ namespace HR.LeaveManagement.MVC.Services
             }
         }
 
-        public async Task<bool> Register(string firstName, string lastName, string userName, string email, string password)
+        public async Task<bool> Register(RegisterVM registration)
         {
-            RegistrationRequest registrationRequest = new() { FirstName = firstName, LastName = lastName, UserName = userName, Email = email, Password = password };
+            var registrationRequest = _mapper.Map<RegistrationRequest>(registration);
             var response = await _client.RegisterAsync(registrationRequest);
 
             if (!string.IsNullOrEmpty(response.UserId))

@@ -77,7 +77,7 @@ namespace HR.LeaveManagement.Identity.Services
                 EmailConfirmed = true
             };
 
-            var existingEmail = await _userManager.CreateAsync(user);
+            var existingEmail = await _userManager.FindByEmailAsync(user.Email);
 
             if (existingEmail == null)
             {
